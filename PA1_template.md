@@ -27,7 +27,7 @@ sum_steps <- sum_steps[,steps:=V1]
 hist(sum_steps$steps, main="Histogram of Total number of steps", xlab="Steps", ylab="Days")
 ```
 
-![plot of chunk unnamed-chunk-3](./PA1_template_files/figure-html/unnamed-chunk-3.png) 
+![plot of chunk unnamed-chunk-3](./figures/unnamed-chunk-3.png) 
 
 ### 2. Mean and median
 
@@ -46,7 +46,7 @@ int_steps <- int_steps[, mean:=V1]
 plot(int_steps$interval, int_steps$mean, type='l', main="Daily activity plot", xlab='5-minute intervals', ylab='Steps Taken')
 ```
 
-![plot of chunk unnamed-chunk-5](./PA1_template_files/figure-html/unnamed-chunk-5.png) 
+![plot of chunk unnamed-chunk-5](./figures/unnamed-chunk-5.png) 
 
 ### 2. Interval with maximum number of steps averaged across all days
 
@@ -96,7 +96,7 @@ sum_steps_fill <- sum_steps_fill[,steps:=V1]
 hist(sum_steps_fill$steps, main="Histogram of Total number of steps (Filled Data)", xlab="Steps", ylab="Days")
 ```
 
-![plot of chunk unnamed-chunk-10](./PA1_template_files/figure-html/unnamed-chunk-10.png) 
+![plot of chunk unnamed-chunk-10](./figures/unnamed-chunk-10.png) 
 
 
 ```r
@@ -150,4 +150,4 @@ screen(2)
 plot(weekday_int_steps$interval, weekday_int_steps$V1, type='l', main='Weekday', xlab='interval', ylab='Number of steps')
 ```
 
-![plot of chunk unnamed-chunk-13](./PA1_template_files/figure-html/unnamed-chunk-13.png) 
+![plot of chunk unnamed-chunk-13](./figures/unnamed-chunk-13.png) 
